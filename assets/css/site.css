@@ -1,0 +1,240 @@
+:root {
+  --color-primary: #1889a6;
+  --color-accent: #fdd741;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+.text-color {
+  color: #000;
+}
+a:hover {
+  color: #1889a6;
+  text-decoration: none;
+}
+h2.heading {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.red-border {
+  border-color: darkred;
+}
+.input-no-error {
+  border-color: green;
+}
+.error {
+  color: red;
+  display: inline-block;
+}
+.center-absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gradient-primary-bottom {
+  background-image: linear-gradient(to bottom, #fdd741a1, #1889a6);
+  color: white;
+}
+
+/* Custom Site */
+
+/* Size */
+.min-vh-100 {
+  min-height: 100vh;
+}
+/* Nav */
+#oniontabs-top-nav a.nav-link:link {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+#oniontabs-top-nav a.nav-link:active,
+#oniontabs-top-nav a.nav-link:hover {
+  color: var(--color-accent);
+}
+.navbar-collapse.show {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.active {
+  color: var(--color-accent) !important;
+}
+/* Slideshow */
+.intro-slide {
+  background-image: url(../../media/images/slide/advocating.jpg);
+  background-size: cover;
+}
+.intro-slide .row {
+  min-height: 75vh !important;
+}
+.oniontabs-slideshow__heading {
+  font-size: 3rem;
+}
+
+/* Backgrounds */
+.bg-black {
+  background-color: #000;
+}
+.heading-cover {
+  background-size: cover;
+  background-position: center;
+}
+.heading-cover .heading {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.heading-cover p {
+  font-size: 1.5rem;
+}
+
+.bg-primary-about {
+  background-image: url(../../media/images/headers/who-we-are.jpg);
+}
+.bg-primary-contact {
+  background-image: url(../../media/images/headers/get-in-touch.jpg);
+  background-position: top;
+}
+.bg-primary-program {
+  background-image: url(../../media/images/headers/programmes.jpg);
+}
+.bg-primary-join {
+  background-image: url(../../media/images/headers/joinus-today.jpg);
+}
+.bg-primary-report {
+  background-image: url(../../media/images/headers/help-with-a-case.jpg);
+  background-position: top;
+}
+.bg-primary-blog {
+  background-image: url(../../media/images/headers/latest-updates.jpg);
+}
+
+.bg-primary-b {
+  background-color: #1889a6;
+}
+.bg-primary-y {
+  background-color: #fdd741;
+  color: #343a40;
+}
+.text-black {
+  color: #000;
+}
+.text-primary-b {
+  color: #1889a6;
+}
+.text-primary-y {
+  color: #fdd741;
+}
+.color-fb {
+  background: #3b5998;
+  border: 0px;
+}
+.color-twitter {
+  background: #00acee;
+  border: 0px;
+}
+.color-instagram {
+  background: #fb3958;
+  border: 0px;
+}
+.btn {
+  font-size: 18px;
+  padding: 0.9rem 2.5rem !important;
+}
+.btn-b {
+  background: #1889a6;
+  color: #fff;
+  border: 0px;
+  font-weight: bold;
+}
+a.btn-b:hover,
+button.btn-b:hover {
+  color: white;
+}
+.focus-area-c {
+  cursor: pointer;
+}
+.chase-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/* show */
+.oniontabs-slideshow__heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Sizing */
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.pt-6 {
+  padding-top: 5rem;
+}
+.pb-6 {
+  padding-bottom: 5rem;
+}
+.my-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.mt-6 {
+  padding-top: 5rem;
+}
+.mb-6 {
+  padding-bottom: 5rem;
+}
+.site-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.site-section--t {
+  margin-top: 120px;
+}
+.site-section--b {
+  margin-bottom: 120px;
+}
+/* blog */
+.blog-item img {
+  height: 230px;
+  object-fit: cover;
+  width: 100%;
+}
+/* Typography */
+.text-heading {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+/* footer */
+/*.footer-socials{*/
+/*	position: absolute;top: 40%;right: 0;z-index: 1;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/* Mobile */
+p {
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  .intro-slide .row {
+    min-height: 85vh !important;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  .text-lg {
+    font-size: 28px;
+  }
+}
