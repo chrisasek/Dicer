@@ -62,6 +62,15 @@ class General
 		return false;
 	}
 
+	public function getter($value, $field = 'id', $comp = "=", $all = true, $table = null)
+	{
+		$table = $table ? $table : $this->_table;
+		if (!$this->_db->query("SELECT * FROM $table WHERE {$field} {$comp} ? ", array($value))->error()) {
+			return $all ? $this->_db->results() : $this->_db->results()[0];
+		}
+		return false;
+	}
+
 	public function getRand($val, $field = 'id', $check = '=', $no_rand = 1)
 	{
 		$text = $this->_db->get($this->_table, array($field, $check, $val));
